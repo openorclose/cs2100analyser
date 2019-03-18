@@ -20,8 +20,7 @@ const download = (from, to, callback) => {
 //PDF parsed
 function success(result) {
     const rows = result.pageTables.reduce((acc, {tables}) => acc.concat(tables.slice(1)), []);
-    const data = {lab: {rows, header: result.pageTables[0].tables[0]}}
-    console.log(rows, rows.length);
+    const data = {lab: {rows, header: result.pageTables[0].tables[0]}};
     fs.writeFile('data.js', "const data = " + JSON.stringify(data) + ";", 'utf8', errorHandler);
 }
 
