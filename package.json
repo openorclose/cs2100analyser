@@ -1,0 +1,14 @@
+{
+  "name": "cs2100",
+  "version": "1.0.0",
+  "description": "CS2100 labs and tutorials score analyser",
+  "dependencies": {
+    "pdf-table-extractor": "^1.0.3"
+  },
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "author": "Open O. Close",
+  "license": "ISC"
+}
